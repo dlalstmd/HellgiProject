@@ -13,25 +13,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import userInformation.UserInformation;
 
-public class RegisterPage extends AppCompatActivity implements UserInformation {
-    @SuppressLint("WrongViewCast")
+public class RegisterPage extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_page);
 
-        EditText userID;
-        EditText userPW;
-
-        userID = findViewById(R.id.UserEmailAddress);
-        userPW = findViewById(R.id.UserPassword);
+        EditText idText = (EditText) findViewById(R.id.UserEmailAddress);
+        EditText pwText = (EditText) findViewById(R.id.UserPassword);
 
         Button register = (Button) findViewById(R.id.registerCompliteButton);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                UserInformation.setUserInformation(userID);
                 startActivity(intent);
             }
         });

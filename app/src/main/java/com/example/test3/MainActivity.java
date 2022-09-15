@@ -1,5 +1,7 @@
 package com.example.test3;
 
+import static java.lang.Class.forName;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,6 +16,8 @@ import java.util.HashMap;
 
 import userInformation.UserInformation;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,15 +25,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button check = (Button) findViewById(R.id.check);
-        TextView text = (TextView) findViewById(R.id.textCheck);
-//        EditText checkText = UserInformation.getUserInformation();
-//        check.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                text.setText(checkText.getText());
-//            }
-//        });
+        EditText idText = (EditText) findViewById(R.id.idInput);
+        EditText pwText = (EditText) findViewById(R.id.pwInput);
+
+        Button loginButton = (Button) findViewById(R.id.logInButton);
 
         Button register = (Button) findViewById(R.id.registerButton);
         register.setOnClickListener(new View.OnClickListener() {
