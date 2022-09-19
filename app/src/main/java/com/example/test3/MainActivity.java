@@ -5,6 +5,7 @@ import static java.lang.Class.forName;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,17 +17,24 @@ import java.util.HashMap;
 
 import userInformation.UserInformation;
 
-
-
 public class MainActivity extends AppCompatActivity {
+    EditText idText;
+    EditText pwText;
+
+    String dbName = "minid0329";
+    String tableName = "user";
+
+    SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText idText = (EditText) findViewById(R.id.idInput);
-        EditText pwText = (EditText) findViewById(R.id.pwInput);
+        idText = (EditText) findViewById(R.id.idInput);
+        pwText = (EditText) findViewById(R.id.pwInput);
+
+        
 
         Button loginButton = (Button) findViewById(R.id.logInButton);
 
