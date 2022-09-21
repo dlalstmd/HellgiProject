@@ -28,6 +28,8 @@
         <activity android:name=".real_main"/>
         <activity android:name=".profile_change"/>
         <activity android:name=".Massage_page"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterActivity"/>
     </application>
 
 </manifest>
