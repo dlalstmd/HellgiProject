@@ -34,9 +34,14 @@ public class MainActivity extends AppCompatActivity {
         idText = (EditText) findViewById(R.id.idInput);
         pwText = (EditText) findViewById(R.id.pwInput);
 
-        
-
         Button loginButton = (Button) findViewById(R.id.logInButton);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Work_page.class);
+                startActivity(intent);
+            }
+        });
 
         Button register = (Button) findViewById(R.id.registerButton);
         register.setOnClickListener(new View.OnClickListener() {

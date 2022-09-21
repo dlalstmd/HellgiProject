@@ -23,6 +23,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterPage"/>
+        <activity android:name=".Work_page"/>
+        <activity android:name=".User_profile"/>
+        <activity android:name=".real_main"/>
+        <activity android:name=".profile_change"/>
+        <activity android:name=".Massage_page"/>
     </application>
 
 </manifest>
