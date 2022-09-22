@@ -20,10 +20,9 @@ import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
     private EditText et_id, et_pass, et_name;
-    private Button btn_register,validateButton;
+    private Button validateButton;
     private AlertDialog dialog;
     private boolean validate=false;
-
 
 
     @Override
@@ -86,7 +85,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
 
-        btn_register=findViewById(R.id.registerCompliteButton);
+        Button btn_register = findViewById(R.id.registerCompliteButton);
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

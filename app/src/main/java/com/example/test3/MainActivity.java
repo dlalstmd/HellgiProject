@@ -15,16 +15,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import userInformation.UserInformation;
-
 public class MainActivity extends AppCompatActivity {
     EditText idText;
     EditText pwText;
 
-    String dbName = "minid0329";
-    String tableName = "user";
-
-    SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

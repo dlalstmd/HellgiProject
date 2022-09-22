@@ -9,7 +9,7 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 
 public class RegisterRequest extends StringRequest{
-    final static private String URL = "http://minid0329.ivyro.net/public_html/register.php";
+    final static private String URL = "http://minid0329.ivyro.net/register.php";
     private HashMap<String,String> map;
 
     public RegisterRequest(String userID, String userPW, String userName, Response.Listener<String> listener) {
@@ -17,7 +17,7 @@ public class RegisterRequest extends StringRequest{
 
         map = new HashMap<>();
         map.put("userID", userID);
-        map.put("userPW", userPW);
+        map.put("userPassword", userPW);
         map.put("userName", userName);
 
     }

@@ -54,14 +54,14 @@
         android:id="@+id/UserEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="153dp"
+        android:layout_marginTop="152dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/아이디"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.422"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="LabelFor,MissingConstraints" />
@@ -77,8 +77,10 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/PersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UserEmailAddress"
+        app:layout_constraintVertical_bias="0.492"
         tools:ignore="LabelFor,MissingConstraints" />
 
     <EditText
@@ -93,10 +95,10 @@
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.422"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UserEmailAddress"
-        app:layout_constraintVertical_bias="0.502"
+        app:layout_constraintVertical_bias="0.49"
         tools:ignore="LabelFor,MissingConstraints" />
 
     <Button
@@ -113,12 +115,11 @@
     <Button
         android:id="@+id/validateButton"
         android:layout_width="93dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:text="중복확인"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/UserEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toEndOf="@+id/UserEmailAddress"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintTop_toTopOf="@+id/UserEmailAddress" />
 </androidx.constraintlayout.widget.ConstraintLayout>
